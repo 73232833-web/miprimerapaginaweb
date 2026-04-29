@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | ORIHUELA LUIS HEIDY</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            background: #0f172a;
+            font-family: 'Krub', sans-serif;
+        }
+
+        .seccion-blanca {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .seccion-blanca h2 {
+            margin-bottom: 10px;
+        }
+
+        .seccion-blanca p {
+            color: #cbd5f5;
+            margin-bottom: 25px;
+        }
+
+        /* TARJETAS */
+        .contacto-tarjetas {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 18px;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .card i {
+            font-size: 22px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+        }
+
+        /* COLORES AJUSTADOS AL TEMA AZUL */
+        .email { 
+            background: linear-gradient(135deg, #2563eb, #1d4ed8); 
+        }
+
+        .whatsapp { 
+            background: linear-gradient(135deg, #16a34a, #22c55e); 
+        }
+
+        .facebook { 
+            background: linear-gradient(135deg, #2563eb, #3b82f6); 
+        }
+
+        .github { 
+            background: linear-gradient(135deg, #1e293b, #475569); 
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1 class="header__titulo">ORIHUELA LUIS <span>HEIDY</span></h1>
+</header>
+
+<div class="barra-navegacion">
+    <nav class="enlaces contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="sobre-mi.html">Sobre Mí</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="contactos.html">Contacto</a>
+    </nav>
+</div>
+
+<main class="contenedor seccion-blanca">
+
+    <h2>¡Hablemos de tu próximo proyecto!</h2>
+    <p>Puedes contactarme a través de cualquiera de los siguientes canales profesionales.</p>
+
+    <div class="contacto-tarjetas">
+
+        <a href="mailto:73232833@idexpasco.edu.pe" class="card email">
+            <i class="fa-solid fa-envelope"></i>
+            73232833@idexpasco.edu.pe
+        </a>
+
+        <a href="https://wa.me/51928614397?text=Hola%20HEYDI%20ORIHUELA" target="_blank" class="card whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp: +51 928 614 397
+        </a>
+
+        <a href="#" class="card facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+            Sigue mi página de Facebook
+        </a>
+
+        <a href="#" class="card github">
+            <i class="fa-brands fa-github"></i>
+            Mira mis repositorios en GitHub
+        </a>
+
+    </div>
+
+</main>
+
+<footer class="pie-pagina">
+    <p> DERECHOS RESERVADOS // ORIHUELA LUIS HEIDY // 2026</p>
+</footer>
+
+</body>
+</html>
