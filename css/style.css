@@ -363,36 +363,19 @@ body.light-mode .enlaces a {
     }
 }
 
-/* --- PEGA ESTO AQUÍ AL FINAL --- */
+/* Esto obliga a cambiar los colores cuando el modo claro esté activo */
+body.light-mode {
+    background-color: #f0f2f5 !important;
+    color: #1a1a1a !important;
+}
 
-/* Corrección para que los textos se vean en Modo Claro */
 body.light-mode .header__titulo, 
 body.light-mode .header__titulo span,
-body.light-mode .banner__opacidad h2,
-body.light-mode .ubicacion-actual,
-body.light-mode .seccion-blanca h2 {
-    color: #0f172a !important; /* Azul muy oscuro casi negro */
-    text-shadow: none;
+body.light-mode .seccion-blanca h2,
+body.light-mode .enlaces a {
+    color: #1a1a1a !important;
 }
 
 body.light-mode .banner__opacidad {
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-}
-
-/* Estilo para que el botón "Ir Arriba" no se vea como un botón gris aburrido */
-#btnTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: var(--morado-principal);
-    color: white;
-    border: none;
-    padding: 1.5rem;
-    border-radius: 50%;
-    cursor: pointer;
-    font-weight: bold;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    display: none; /* El JS lo mostrará al bajar */
+    background-color: rgba(255, 255, 255, 0.8) !important;
 }
