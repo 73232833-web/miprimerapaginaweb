@@ -83,6 +83,35 @@ body {
     border-radius: 5px;
 }
 
+/* --- PEGA AQUÍ EL NUEVO CÓDIGO --- */
+.btn-theme {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    display: flex; /* Añade esto para alinearlo mejor en el menú */
+    align-items: center;
+}
+
+.btn-theme:hover {
+    transform: scale(1.2);
+}
+
+/* Estilo para cuando se active el modo claro */
+body.light-mode {
+    background-color: #f0f2f5;
+    color: #1a1a1a;
+}
+
+/* Para que las letras del título y secciones también cambien en modo claro */
+body.light-mode .header__titulo, 
+body.light-mode .seccion-blanca h2,
+body.light-mode .enlaces a {
+    color: #1a1a1a;
+}
+
 /* BANNER */
 .banner-principal {
     background-image: 
